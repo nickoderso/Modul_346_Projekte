@@ -20,6 +20,10 @@ Modul 141 erstellt wurde, muss dieses nicht mehr erstellt werden. Folgende Resso
 <h2>Informationen zur Datenbank</h2>
 Im unteren Abschnitt folgende alle Informationen zur Datenbank<br><br>
 - Engine: Bei der Datenbank haben wir uns für eine MariaDB entschieden, da wir mit dieser Engine bereits viel Erfahrung sammeln konnten. <br>
+- Benutzer: Wir haben einen Datenbank Benutzer angelegt mit welchem wir uns später an der Datenbank anmelden können. <br>
+  - Name: Vmadmin <br>
+  - Passwort: sml12345 <br>
+  
 
 
 
