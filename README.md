@@ -12,8 +12,14 @@ In diesem Projekt werden wir eine EC2 und eine RDS Instanz deployen und diese an
 Modul 141 erstellt wurde, muss dieses nicht mehr erstellt werden. Folgende Ressourcen werden benötigt um die Umgebung aufzusetzen: <br> <br>
 
 <!-- Folgende Instanzen werden benötigt -->
-- EC2 Instanz (Webserver) <br>
+- EC2 Ubuntu Server Instanz (Webserver) <br>
 - RDS (Database) <br>
 - Netzwerk (Bereitsvorhanden) <br>
+
+<!-- Infortmationen und Beschreibung zur Datenbank -->
+<h2>Informationen zur Datenbank</h2>
+Im unteren Abschnitt folgende alle Informationen zur Datenbank<br><br>
+- Engine: Bei der Datenbank haben wir uns für eine MariaDB entschieden, da wir mit dieser Engine bereits viel Erfahrung sammeln konnten. <br>
+
 
 
