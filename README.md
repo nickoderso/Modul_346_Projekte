@@ -20,21 +20,25 @@ Modul 141 erstellt wurde, muss dieses nicht mehr erstellt werden. Folgende Resso
 
 Im folgenden Abschnitt sind alle Informationen zur Datenbank aufgeführt.
 
-- **Engine:** Wir haben uns für die MySQL-Engine entschieden, da wir bereits umfangreiche Erfahrungen damit gesammelt haben.
-- **Benutzer:** Ein Datenbankbenutzer wurde erstellt, mit dem wir uns später an der Datenbank anmelden können.
-  - *Name:* Vmadmin
-  - *Passwort:* sml12345
-- **Auswahl der Datenbank Erstellungsmethode:** Standard-Erstellung
-- **Engine Version:** 8.0.25
-- **Datenbank Name:** WS1-346
-- **Speichergröße und Typ:** Universelle SSD, 20GB
-- **Anbindung:** Direkte Verbindung zur erstellten EC2-Instanz für den Webserver.
-- **Optionale Einstellungen:** Standard
+## Informationen zur Datenbank
+
+| Eigenschaft                    | Details                                     |
+|-------------------------------|---------------------------------------------|
+| **Engine**                    | MySQL                                       |
+| **Benutzer**                  | Vmadmin                                     |
+|             **Name**             |  Vmadmin                             |
+|   **Passwort**                  |  sml12345                        |
+| **Erstellungsmethode**         | Standard                                    |
+| **Engine Version**             | 8.0.25                                      |
+| **Datenbank Name**             | WS1-346                                     |
+| **Speichergröße und Typ**      | Universell SSD, 20GB                         |
+| **Anbindung**                  | Direkte Anbindung an EC2-Instanz für Webserver|
+| **Optionale Einstellungen**    | Default                                     |
 
   
 <!-- Infortmationen und Beschreibung zum Webserver -->
 <h2>Informationen zum Webserver</h2>
-Im unteren Abschnitt folgende alle Informationen zum Webserver.<br><br>
+Im unteren Abschnitt folgen alle Informationen zum Webserver.<br><br>
 
 Um eine Website auf dem Server zu hosten, mussten wir zuerst Apache installieren. Das haben wir mit den nachfolgenden Befehlen gemacht: <br>
 - sudo apt update (System updaten)
@@ -43,6 +47,20 @@ Um eine Website auf dem Server zu hosten, mussten wir zuerst Apache installieren
 
 Nachdem ich Apache erfolgreich installiert habe, konnte ich nur noch das HTML und PHP File entsprechend anpassen. Nun konnte ich die Website über die private IP im LAN erreichen. Für das die Website nun öffentlich erreicht werden konnte, muss auf der Firewall der Port "80" geöffent werden. Dies konnte direkt auf der EC2 Instanz mit dem nachfolgenden Befehl erledigt werden: <br>
 - sudo ufw allow 80
+
+Bei Schwierigkeiten habe ich mir Hilfe auf folgender Website gesucht: <br>
+https://faun.pub/how-to-install-apache-on-aws-ec2-instance-ubuntu-18-04-44fa1fac6236
+
+<h2>Umsetzung des Projekts</h2>
+Für die Umsetzung habe ich mir zuerst einen groben Ablaufplan erstellt um die Arbeiten besser einzuplanen und effizienter zu arbeiten. Dabei bin ich wie folgt vorgeganen: <br> <br>
+
+1.)  Terraform Script für die Erstellung der RDS und EC2 Instanz erstellen <br>
+2.) VSCode Anbindung an AWS <br>
+3.) Mittels SSH auf EC2 (Webserver) Instanz verbinden <br>
+4.) Webserver Dienste installieren (Apache) <br>
+5.) Index.html auf der EC2 bearbeiten <br>
+6.) Firewall auf der EC2 bearbeiten <br>
+
 
 
 
