@@ -19,10 +19,17 @@ Modul 141 erstellt wurde, muss dieses nicht mehr erstellt werden. Folgende Resso
 <!-- Infortmationen und Beschreibung zur Datenbank -->
 <h2>Informationen zur Datenbank</h2>
 Im unteren Abschnitt folgende alle Informationen zur Datenbank<br><br>
-- Engine: Bei der Datenbank haben wir uns für eine MariaDB entschieden, da wir mit dieser Engine bereits viel Erfahrung sammeln konnten. <br>
+- Engine: Bei der Datenbank haben wir uns für eine MySQL entschieden, da wir mit dieser Engine bereits viel Erfahrung sammeln konnten. <br>
 - Benutzer: Wir haben einen Datenbank Benutzer angelegt mit welchem wir uns später an der Datenbank anmelden können. <br>
   - Name: Vmadmin <br>
   - Passwort: sml12345 <br>
+- Auswahl der Datenbank Erstellungsmethode: Standart Erstellung <br>
+-Engine Version: 8.0.25 <br>
+-Datenbank Name: WS1-346 <br>
+-Speichergrösse und Typ: Universell SSD, 20GB <br>
+-Anbindung: Direkte Anbindung an erstelle EC2 Instace für Webserver. <br>
+-Optionale Einstellungen: Deafult <br>
+
   
 
 
