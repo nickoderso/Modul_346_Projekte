@@ -41,12 +41,12 @@ Im folgenden Abschnitt sind alle Informationen zur Datenbank aufgeführt.
 Im unteren Abschnitt folgen alle Informationen zum Webserver.<br><br>
 
 Um eine Website auf dem Server zu hosten, mussten wir zuerst Apache installieren. Das haben wir mit den nachfolgenden Befehlen gemacht: <br>
-- sudo apt update (System updaten)
-- sudo apt install apache2 (Apache installieren)
-- sudo systemctl start apache2 (Apache Dienst starten)
+- `sudo apt update` (System updaten)
+- `sudo apt install apache2` (Apache installieren)
+- `sudo systemctl start apache2` (Apache Dienst starten)
 
 Nachdem ich Apache erfolgreich installiert habe, konnte ich nur noch das HTML und PHP File entsprechend anpassen. Nun konnte ich die Website über die private IP im LAN erreichen. Für das die Website nun öffentlich erreicht werden konnte, muss auf der Firewall der Port "80" geöffent werden. Dies konnte direkt auf der EC2 Instanz mit dem nachfolgenden Befehl erledigt werden: <br>
-- sudo ufw allow 80
+- `sudo ufw allow 80`
 
 Bei Schwierigkeiten habe ich mir Hilfe auf folgender Website gesucht: <br>
 https://faun.pub/how-to-install-apache-on-aws-ec2-instance-ubuntu-18-04-44fa1fac6236
