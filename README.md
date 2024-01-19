@@ -79,6 +79,27 @@ Für die Umsetzung habe ich mir zuerst einen groben Ablaufplan erstellt, um die 
 4. Webserver-Dienste installieren (Apache)
 5. Index.html auf der EC2 bearbeiten
 6. Firewall auf der EC2 bearbeiten
+<br>
+
+<h1>Projekt 3 und 4</h1>
+
+In diesem Projekt haben wir mit Route 53, AWS Certificate Manager (ACM) und Loadbalancer eine Webseite erstellt, diese mit einer Domain verbunden und eine sichere Verbindung mittels SSL/TSL Zertifikat hergestellt.
+Die webseit war bereits bestehend aus einem anderen Projekt und musste daher nicht aufgebaut werden. <br> <br>
+
+## Benötigte Services <br>
+- EC2 Instance (Webserver und Loadbalancer)
+- Amazon Certificate Manager (ACM)
+- Route 53
+  
+<h2> Informationen zum Webserver </h2>
+
+| **Definition**         |    Ziel               |
+|------------------------|----------------------|
+| Name des Webservers     | Dorffete Webserver    |
+| OS                     | Ubuntu Server        |
+| AMI ID                | ami-0c7217cdde317cfec|
+| User                   | Ubuntu               |
+
 
 
 
