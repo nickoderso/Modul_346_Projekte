@@ -93,13 +93,36 @@ Die webseit war bereits bestehend aus einem anderen Projekt und musste daher nic
   
 <h2> Informationen zum Webserver </h2>
 
-| **Definition**         |    Ziel               |
+| **Definition**         |    Ziel              |
 |------------------------|----------------------|
-| Name des Webservers     | Dorffete Webserver    |
+| Name des Webservers    |  Dorffete Webserver  |
 | OS                     | Ubuntu Server        |
-| AMI ID                | ami-0c7217cdde317cfec|
+| AMI ID                 |ami-0c7217cdde317cfec |
 | User                   | Ubuntu               |
+| Service                | Apache               |
+| Domain                 | Dorffete.ch          |
+| IP Adressen Typ        | Elastisch            |
+| Offene Ports           | 22, 80, 443          |
 
+## Route 53
+- Route 53 in AWS aufrufen
+- Neue Gehostete Zone Erstellen
+- Domain angeben und weiter
+
+## Domain Provider
+- Hinterlege den DNS von Route 53 bei deinem Domain Provider (Unterschiedlich zwischen Anbietern)
+  
+## AWS Certificate Manager (ACM)
+- ACM in AWS aufrufen
+- Neues öffentliches Zertifikat anfordern
+- Deine Domain angeben (füge deine Domain hinzu und einmal noch mit einer Wildcard -> deinedomain.com *.deinedomain.com)
+- DNS Verifizierung auswählen (Sofern zugriff auf DNS DB der Domain)
+- RSA Zertifikat auswählen und Zertifikat Anfragen
+
+## Domain Provider
+- CNAME aus ACM kopieren und damit neue CNAME's in der Domain datenbank anlegen.
+
+##
 
 
 
