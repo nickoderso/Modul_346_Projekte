@@ -104,6 +104,13 @@ Die webseit war bereits bestehend aus einem anderen Projekt und musste daher nic
 | IP Adressen Typ        | Elastisch            |
 | Offene Ports           | 22, 80, 443          |
 
+## Loadbalancer
+- EC2 in AWS aufrufen
+- Load Balancer öffnen
+- Application Load Balancer erstellen
+- Freie Konfiguration (Wichtig VPC mit dem Webserver auswählen und Port 443 für https auswählen)
+- Sicherheitsgruppe Auswählen
+  
 ## Route 53
 - Route 53 in AWS aufrufen
 - Neue Gehostete Zone Erstellen
@@ -122,7 +129,8 @@ Die webseit war bereits bestehend aus einem anderen Projekt und musste daher nic
 ## Domain Provider
 - CNAME aus ACM kopieren und damit neue CNAME's in der Domain datenbank anlegen.
 
-##
+## ACM
+- Datensätze des Zertifikates in Route 53 Übertragen
 
 
 
