@@ -103,6 +103,7 @@ Die webseit war bereits bestehend aus einem anderen Projekt und musste daher nic
 | Domain                 | Dorffete.ch          |
 | IP Adressen Typ        | Elastisch            |
 | Offene Ports           | 22, 80, 443          |
+|Monatliche Kosten       | ca. 2.50 CHF mntl.   |
 
 ## Loadbalancer
 - EC2 in AWS aufrufen
