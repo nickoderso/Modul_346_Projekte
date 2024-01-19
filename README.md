@@ -15,12 +15,30 @@ Modul 141 erstellt wurde, muss dieses nicht mehr erstellt werden. Folgende Resso
 - EC2 Ubuntu Server Instanz (Webserver) <br>
 - RDS (Database) <br>
 - Netzwerk (Bereitsvorhanden) <br>
+## Getroffene Ziele
+
+Zu Beginn des Projekts haben wir einige Ziele definiert, um am Schluss zu überprüfen, ob wir unser Projekt nach Plan umsetzen konnten.
+
+| **Definition**         |    Ziel               |
+|------------------------|----------------------|
+| Name des Webservers     | projekt_burki_web    |
+| OS                     | Ubuntu Server        |
+| AMI ID                | ami-0fc5d935ebf8bc3bc|
+| User                   | Ubuntu               |
+
+| **Definition**           |           Ziel      |
+|-------------------------|----------------------|
+| Engine                  | MySQL                |
+| Passwort                | sml12345             |
+| Datenbankname           | WS1-346              |
+| Speicher                | 20GB SSD             |
+
 
 ## Informationen zur Datenbank
 
 Im folgenden Abschnitt sind alle Informationen zur Datenbank aufgeführt.
 
-## Informationen zur Datenbank
+<h3>Tabelle mit Informationen zur Datenbank</h3>
 
 | Eigenschaft                    | Details                                     |
 |-------------------------------|---------------------------------------------|
@@ -51,15 +69,17 @@ Nachdem ich Apache erfolgreich installiert habe, konnte ich nur noch das HTML un
 Bei Schwierigkeiten habe ich mir Hilfe auf folgender Website gesucht: <br>
 https://faun.pub/how-to-install-apache-on-aws-ec2-instance-ubuntu-18-04-44fa1fac6236
 
-<h2>Umsetzung des Projekts</h2>
-Für die Umsetzung habe ich mir zuerst einen groben Ablaufplan erstellt um die Arbeiten besser einzuplanen und effizienter zu arbeiten. Dabei bin ich wie folgt vorgeganen: <br> <br>
+## Umsetzung des Projekts
 
-1.)  Terraform Script für die Erstellung der RDS und EC2 Instanz erstellen <br>
-2.) VSCode Anbindung an AWS <br>
-3.) Mittels SSH auf EC2 (Webserver) Instanz verbinden <br>
-4.) Webserver Dienste installieren (Apache) <br>
-5.) Index.html auf der EC2 bearbeiten <br>
-6.) Firewall auf der EC2 bearbeiten <br>
+Für die Umsetzung habe ich mir zuerst einen groben Ablaufplan erstellt, um die Arbeiten besser einzuplanen und effizienter zu gestalten. Dabei bin ich wie folgt vorgegangen:
+
+1. Terraform Script für die Erstellung der RDS- und EC2-Instanz erstellen
+2. VSCode-Anbindung an AWS
+3. Mittels SSH auf EC2 (Webserver) Instanz verbinden
+4. Webserver-Dienste installieren (Apache)
+5. Index.html auf der EC2 bearbeiten
+6. Firewall auf der EC2 bearbeiten
+
 
 
 
